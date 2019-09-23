@@ -1,7 +1,10 @@
 # Employee-Management-System
 Employee Management project based on React and Redux in UI and Node js as Backend service and MongoDB Atlas as database
 
-To Run this project, you need to run npm install from Terminal. Once it it installed you can go aheard and run npm start.Pages will be served.
+To Run this project, you need to run npm install from Terminal. Once it it installed you can go aheard and run npm start.
+
+1. npm install // it will install all dependencies for this project
+2. npm serve // it will launch your application in live development server.
 
 Please Note: You need to run Employee Management Backed service first before running this proeject.Use below link for backend service project.
 
