@@ -30,10 +30,10 @@ export default class RoleDepartment extends Component {
   renderDepartmentSelect = () => {
     return (
       <div className="form-group">
-        <label htmlFor="sel1">Select Department:</label>
+        {/* <label className="fieldLabel" htmlFor="sel1">Select Department:</label> */}
         <select onChange={this.onSelectDepartment} value={this.state.department || ''} 
         className="form-control" id="sel1">
-          <option value="">Select Department</option>
+          <option value="" disabled>Select Department</option>
           <option value="Finance">Finance</option>
           <option value="HR">HR</option>
           <option value="IT">IT</option>
@@ -49,8 +49,8 @@ export default class RoleDepartment extends Component {
 
     return (
       <div className="form-group">
-        <label htmlFor="sel1">Select Role:</label>
         <select onChange={this.onSelectRole} value={this.state.role || ''} className="form-control" id="sel1">
+        <option value="" disabled>Select Role</option>
           <option value="Manager">Manager</option>
           <option value="Coordinator">Coordinator</option>
           <option value="consultant">Consultant</option>

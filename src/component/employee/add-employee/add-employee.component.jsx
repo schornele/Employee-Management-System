@@ -47,18 +47,18 @@ class AddEmployees extends Component {
         return (
             <div className="newEmployeeForm">
                 <h1 className="todoHeader">Add Employee</h1>
+                <br />
                 <form className="addEmployeeForm">
                     <div className="form-group">
-                        <label>First Name</label>
+                        <label className="fieldLabel">First Name</label>
                         <input type="text" className="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter First Name" value={this.state.firstName} onChange={this.onChange} />
                     </div>
-                    <br />
                     <div className="form-group">
-                        <label>Last Name</label>
+                        <label className="fieldLabel">Last Name</label>
                         <input type="text" className="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter Last Name" value={this.state.lastName} onChange={this.onChange} />
                     </div>
                     <div className="customDatePickerWidth">
-                        <label>Birth Date</label>
+                        <label className="fieldLabel">Birth Date</label>
                         <DatePicker className="form-control"
                             selected={Date.parse(this.state.birthDate)}
                             onChange={this.onDateChange}
@@ -71,7 +71,7 @@ class AddEmployees extends Component {
                         onChange={this.onInputChange}
                     />
                     <div className="form-group">
-                        <label >Email</label>
+                        <label className="fieldLabel">Email</label>
                         <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" value={this.state.email} onChange={this.onChange} />
                     </div>
                 </form>
